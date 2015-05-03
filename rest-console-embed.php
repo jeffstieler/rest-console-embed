@@ -10,8 +10,39 @@
 
 class REST_Console_Embed {
 
+	protected $tag_name = 'rest-console';
+
 	function init() {
-		
+
+		add_shortcode( $this->tag_name, array( $this, 'shortcode' ) );
+
+	}
+
+	function shortcode( $atts ) {
+
+		$defaults = array(
+			'redirect_uri' => '',
+			'api_root'     => '',
+			'oauth_uri'    => '',
+			'auth'         => '',
+			'width'        => '100%',
+			'height'       => '500'
+		);
+
+		$shortcode_atts = shortcode_atts( $defaults, $atts );
+
+		$iframe_width   = $shortcode_atts['width'];
+		$iframe_height  = $shortcode_atts['height'];
+
+		unset( $shortcode_atts['width'], $shortcode_atts['height'] );
+
+		$console_args = array_map( 'esc_attr', array_filter( $shortcode_atts ) );
+		$console_url  = plugins_url( 'console/index.html', __FILE__ );
+
+		$iframe_src   = add_query_arg( $console_args, $console_url );
+
+		printf( '<iframe width="%s" height="%s" src="%s"></iframe>', esc_attr( $iframe_width ), esc_attr( $iframe_height ), esc_url( $iframe_src ) );
+
 	}
 
 }
