@@ -1,0 +1,12 @@
+{
+  "name": "rest-console-embed",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Jeff Stieler <jeff.m.stieler@gmail.com>",
+  "license": "GPL",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-rename": "^1.2.2"
+  }
+}
