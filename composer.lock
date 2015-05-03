@@ -4,18 +4,35 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4b21e00fdfe86c98c84382efd79f11b6",
+    "hash": "52f4d9b6073a862382a0e7f8e3cb22c5",
     "packages": [
         {
             "name": "jeffstieler/rest-api-console2",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "git@github.com:jeffstieler/rest-api-console2.git",
-                "reference": "master"
+                "url": "https://github.com/jeffstieler/rest-api-console2.git",
+                "reference": "bea1530da8a66af10ec2dd87f3838060b90a0392"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jeffstieler/rest-api-console2/zipball/bea1530da8a66af10ec2dd87f3838060b90a0392",
+                "reference": "bea1530da8a66af10ec2dd87f3838060b90a0392",
+                "shasum": ""
             },
             "type": "library",
-            "time": "2015-05-01 00:48:11"
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL"
+            ],
+            "authors": [
+                {
+                    "name": "Jeff Stieler",
+                    "email": "jeff.m.stieler@gmail.com"
+                }
+            ],
+            "description": "Fork of Automattic/rest-api-console2, 'a better REST console'.",
+            "time": "2015-05-03 19:13:10"
         }
     ],
     "packages-dev": [],

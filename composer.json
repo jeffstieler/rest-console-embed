@@ -9,21 +9,6 @@
             "email": "jeff.m.stieler@gmail.com"
         }
     ],
-    "repositories": [
-        {
-            "type": "package",
-            "package": {
-                "type": "library",
-                "name": "jeffstieler/rest-api-console2",
-                "version": "dev-master",
-                "source": {
-                    "type": "git",
-                    "url": "git@github.com:jeffstieler/rest-api-console2.git",
-                    "reference": "master"
-                }
-            }
-        }
-    ],
     "require": {
         "jeffstieler/rest-api-console2": "dev-master"
     }
