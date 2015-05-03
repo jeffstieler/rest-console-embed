@@ -1,0 +1,32 @@
+(function(){
+
+	function parseQueryString() {
+	    if (!window.location.search) {
+	        return({});
+	    }
+	    var params = {};
+	    var temp;
+	    var items = window.location.search.slice(1).split("&");
+	    for (var i = 0; i < items.length; i++) {
+	        temp = items[i].split("=");
+	        if (temp[0]) {
+	            if (temp.length < 2) {
+	                temp.push("");
+	            }
+	            params[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);        
+	        }
+	    }
+	    return(params);
+	}
+
+	var query = parseQueryString();
+
+	return {
+	    "client_id": query.client_id || "12345",
+	    "redirect_uri": query.redirect_uri || "http://example.com/path/to/app",
+	    "api_root": query.api_root || "https://public-api.wordpress.com/rest",
+	    "oauth_uri": query.oauth_uri || "https://public-api.wordpress.com/oauth2/authorize",
+	    "auth": query.auth || "oauth"
+	};
+
+})();
