@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2439ce918905af77f3c9566dc85ef6f1",
+    "hash": "ebfabdae5988ad543b73820f3dc6c29b",
     "packages": [
         {
             "name": "jeffstieler/rest-api-console2",
@@ -37,7 +37,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "stability-flags": {
         "jeffstieler/rest-api-console2": 20
     },

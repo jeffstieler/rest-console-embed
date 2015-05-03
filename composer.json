@@ -12,5 +12,14 @@
     "require": {
         "jeffstieler/rest-api-console2": "dev-master"
     },
-    "minimum-stability": "dev"
+    "scripts": {
+        "post-install-cmd": [
+            "npm install",
+            "gulp"
+        ],
+        "post-update-cmd": [
+            "npm install",
+            "gulp"
+        ]
+    }
 }
