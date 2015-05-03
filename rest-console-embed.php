@@ -26,7 +26,7 @@ class REST_Console_Embed {
 			'oauth_uri'    => '',
 			'auth'         => '',
 			'width'        => '100%',
-			'height'       => '500'
+			'height'       => '500px'
 		);
 
 		$shortcode_atts = shortcode_atts( $defaults, $atts );
@@ -41,7 +41,13 @@ class REST_Console_Embed {
 
 		$iframe_src   = add_query_arg( $console_args, $console_url );
 
-		printf( '<iframe width="%s" height="%s" src="%s"></iframe>', esc_attr( $iframe_width ), esc_attr( $iframe_height ), esc_url( $iframe_src ) );
+		printf(
+			'<div class="%s" style="width: %s; height: %s;"><iframe width="100%%" height="100%%" src="%s"></iframe></div>',
+			esc_attr( $this->tag_name ),
+			esc_attr( $iframe_width ),
+			esc_attr( $iframe_height ),
+			esc_url( $iframe_src )
+		);
 
 	}
 
