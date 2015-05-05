@@ -25,6 +25,10 @@ For the console to work properly, the target API will need to:
 1. Activate the plugin through the \'Plugins\' menu in WordPress.
 1. Use the `[rest-console]` shortcode in your content.
 
+== Screenshots ==
+
+1. REST Console embedded in a post.
+
 == Changelog ==
 = 0.1.0 =
 * Initial release.
